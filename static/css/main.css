@@ -685,3 +685,19 @@ p code {
     float: none;
   }
 }
+
+[dir="rtl"] .post-content {
+  direction: rtl;
+  text-align: right;
+}
+
+[dir="rtl"] .post-content *:lang(en) {
+  direction: ltr;
+  text-align: left;
+  unicode-bidi: isolate;
+}
+
+.bidi-mixed {
+  unicode-bidi: plaintext;
+  text-align: start;
+}
