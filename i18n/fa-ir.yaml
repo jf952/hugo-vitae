@@ -19,3 +19,12 @@
 
 - id: words
   translation: "کلمه"
+
+- id: Posts
+  translation: "نوشته‌ها"
+
+- id: Tags
+  translation: "برچسب‌ها"
+
+- id: Categories
+  translation: "دسته بندی‌ها"
