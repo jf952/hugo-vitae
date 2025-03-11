@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.Language.Lang }}" dir='{{ .Site.Params.LanguageDir | default "ltr" }}'>
 {{ partial "head.html" . -}}
-<script>
+<script defer>
+
+
 document.addEventListener('DOMContentLoaded', function() {
   const elements = document.querySelectorAll(`
     .markdown p,
