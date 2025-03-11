@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.Language.Lang }}">
+<html lang="{{ .Site.Language.Lang }}" dir='{{ .Site.Params.LanguageDir | default "ltr" }}'>
 {{ partial "head.html" . -}}
 <script>
 document.addEventListener('DOMContentLoaded', function() {
