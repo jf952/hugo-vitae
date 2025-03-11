@@ -258,10 +258,14 @@ table th {
   color: var(--bg-color);
 }
 
-#avatar {
-  display: flex;
-  justify-content: flex-end; /* Aligns to the right */
+[dir="rtl"] #avatar {
+  margin-right: 20px;
+  float: right;
+}
+
+[dir="ltr"] #avatar {
   margin-left: 20px;
+  float: left;
 }
 
 
