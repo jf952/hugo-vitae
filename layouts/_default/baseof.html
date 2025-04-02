@@ -4,6 +4,8 @@
 <script defer>
 
 
+const persianRegex = /[\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF\uFB50-\uFDFF\uFE70-\uFEFF]/;
+
 document.addEventListener('DOMContentLoaded', function() {
   const elements = document.querySelectorAll(`
     .markdown p,
@@ -21,10 +23,12 @@ document.addEventListener('DOMContentLoaded', function() {
     .markdown th
   `);
 
-  const persianRegex = /[\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF\uFB50-\uFDFF\uFE70-\uFEFF]/;
 
   elements.forEach(el => {
-    const hasPersian = persianRegex.test(el.textContent);
+    const persianNumberOfLetterMatches = Array.from(el.textContent.matchAll(persianRegex)).length;
+    if (persianNumberOfLetterMatches < el.textContent.length) {
+      return;
+    }
 
     el.style.direction = hasPersian ? 'rtl' : 'ltr';
     el.style.textAlign = hasPersian ? 'right' : 'left';
