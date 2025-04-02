@@ -21,3 +21,5 @@ collaboration of others.
 * [Konrad Borowski](https://github.com/xfix)
 * [Peter D. Faria](https://github.com/zshift)
 * [Sunny T](https://github.com/tsunny)
+* [Jafar Farghanlooj](https://github.com/jf952)
+* [Farooq Karimi Zadeh](https://github.com/farooqkz)
