@@ -128,4 +128,13 @@ The following options for `class=` are available: right, alignright, left and al
  - **.Params.imagetext** # Add alternate text for the image to the post
  - **.Params.hidemeta** # Hide the metadata (readingTime, wordCount and Author)
 
+## RTL and Jalali calendar support
+
+Hugo doesn't natively support Jalali date. However, a small Javascript has been added to convert Gregorian dates to Jalali ones in the user's browser. You can enable it by setting `jalali` website parameter to `true`. As for RTL support, you have to set `LanguageDir` site paramter to `rtl`. It's `ltr` by default.
+
+Also a Javascript has been added which changes text align and direction accordingly, when a Persian text is detected.
+
+For an example and live demo of a Persian website with Vitae, check Farooq's personal website. [Repo on Codeberg](https://codeberg.org/farooqkz/blogfa) and [the Website itself](https://blogfa.farooqkz.com).
+
+
 **Examples for site configuration and front matter can be found in `examples/`.**
