@@ -24,6 +24,13 @@
 <link rel="stylesheet" type="text/css" media="screen" href="{{ relURL "css/normalize.css" }}" />
 <link rel="stylesheet" type="text/css" media="screen" href="{{ relURL "css/main.css" }}" />
 <link rel="stylesheet" type="text/css" media="screen" href="{{ relURL "css/all.css" }}" />
+{{ if eq .Site.Language.Lang "fa-ir " }}
+<style>
+body {
+  font: "Vazirmatn";
+}
+</style>
+{{end}}
 <script defer src="{{ relURL "js/jalali.js" }}"  crossorigin="anonymous"></script>
 {{ if .Site.Params.jalali }}
 <script>
