@@ -43,7 +43,7 @@
   font-display: auto;
   font-style:  normal;
   font-weight: 400;
-  src: local('Vazirmatn'), url('../webfonts/Vazir.woff2') format('woff');
+  src: local('Vazirmatn'), url('../webfonts/Vazir.woff2') format('woff2');
 }
 
 @font-face {
@@ -51,7 +51,7 @@
   font-display: auto;
   font-style:  normal;
   font-weight: 500;
-  src: local('Vazirmatn'), url('../webfonts/Vazir-Medium.woff2') format('woff');
+  src: local('Vazirmatn'), url('../webfonts/Vazir-Medium.woff2') format('woff2');
 }
 
 @font-face {
@@ -59,7 +59,7 @@
   font-display: auto;
   font-style:  normal;
   font-weight: 600;
-  src: local('Vazirmatn'), url('../webfonts/Vazir-Bold.woff2') format('woff');
+  src: local('Vazirmatn'), url('../webfonts/Vazir-Bold.woff2') format('woff2');
 }
 
 
