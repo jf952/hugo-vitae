@@ -130,11 +130,15 @@ The following options for `class=` are available: right, alignright, left and al
 
 ## RTL and Jalali calendar support
 
-Hugo doesn't natively support Jalali date. However, a small Javascript has been added to convert Gregorian dates to Jalali ones in the user's browser. You can enable it by setting `jalali` website parameter to `true`. As for RTL support, you have to set `LanguageDir` site paramter to `rtl`. It's `ltr` by default.
+Hugo doesn't natively support Jalali date. However, a small Javascript has been added to convert Gregorian dates to Jalali ones in the user's browser. You can enable it by setting `.Params.jalali` website parameter to `true`. As for RTL support, you have to set `.Params.LanguageDir` site paramter to `rtl`. It's `ltr` by default.
 
 Also a Javascript has been added which changes text align and direction accordingly, when a Persian text is detected.
 
+If the website language is set to Persian, it'll use Vazirmatn open source font which has been created by late Rastikerdar. The fonts come with the theme.
+
 For an example and live demo of a Persian website with Vitae, check Farooq's personal website. [Repo on Codeberg](https://codeberg.org/farooqkz/blogfa) and [the Website itself](https://blogfa.farooqkz.com).
+
+
 
 
 **Examples for site configuration and front matter can be found in `examples/`.**
